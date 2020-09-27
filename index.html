@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="syu.jpg">
+</head>
+<body>
+    <!--Preloader-->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+    <!--Preloader End-->
+
+    <nav class="navbar">
+        <div class="container"> 
+            <div class="navbar-inner">
+                <div class="burger">
+                    <i class="fa fa-bars menu-btn"></i>
+                </div>
+                <ul class="navbar-item close">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Home Section-->
+    <section class="section home" id="home">
+        <div class="container">
+            <div class="home-inner">
+                <div class="profile-pic">
+                    <img src="syu.jpg" alt="Profile Picture" class="shadow-dark">
+                </div>
+
+                <div class="intro">
+                    <h3>Hi! I'm Syuhaddah</h3>
+                    <div class="social-media">
+                        <a href="https://facebook.com" target="_blank" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+
+                    <br>
+
+                    <a href="resume.pdf" target="_blank" class="cv">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Home Section End-->
+
+    <!--About Section-->
+    <section class="section" id="about">
+        <div class="container">
+            <h3 class="subtitle">About Me</h3>
+            <div class="about-inner">
+                <div class="about-content">
+                    <p>
+                        Electrical and Electronic Engineering student with great understanding of fundamentals and application of electrical and electronic engineering knowledge.
+                    </p>
+                    <p>
+                        An internship seeker who always aware and able to adapt to any environment, especially in a team.
+                    </p>
+                </div>
+
+                <div class="skills shadow-dark">
+                    <ul>
+                        <li class="html">HTML</li>
+                        <li class="css">CSS</li>
+                        <li class="js">JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About Section End-->
+
+    <!--Portfolio Section-->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <h3 class="subtitle">Portfolio</h3>
+            <div class="experience-inner">
+                <div class="frame">
+                    <div class="gallery shadow-dark">
+                        <img class="exp" src="gtu.jpg" alt="Coding">
+                        <div class="description">Programming Experience</div>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <div class="gallery shadow-dark">
+                        <img class="exp" src="edit.png" alt="Editing">
+                        <div class="description">Video Editing Experience</div>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <div class="gallery shadow-dark">
+                        <img class="exp" src="em.jpg" alt="Event Management">
+                        <div class="description">Event Management Experience</div>
+                    </div>
+                </div>
+
+                <div class="frame">
+                    <div class="gallery shadow-dark">
+                        <img class="exp" src="silat.jpg" alt="Silat Athlete">
+                        <div class="description">Silat Athlete in Regu Puteri</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Portfolio Section End-->
+
+    <!--Contact Section-->
+    <section class="section" id="contact">
+        <div class="container">
+            <h3 class="subtitle">Contact</h3>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display: none;" onload="if(submitted) {resetForm()}"></iframe>
+        <form class="contact-form shadow-dark" id="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSelCqj-dMfi8wsgLYNdp79gabmyrzpJMmZdhUu7Of1qsLIO6w/formResponse" method="post" target="hidden_iframe" role="form" onsubmit="return validateForm();">
+            <div class="input-fields">
+                <input type="text" required class="input" id="name" name="entry.1492441048" placeholder="Name">
+                <input type="text" required class="input" id="email" name="entry.649477157" placeholder="Email">
+                <input type="text" required class="input" id="subject" name="entry.709768958" placeholder="Subject">
+            </div>
+
+            <div class="msg">
+                <textarea required placeholder="Message" id="message" name="entry.787515304"></textarea>
+                <button type="submit" name="submit" class="btn">Send</button>
+                <div id="success" style="color: red;"><br></div>
+            </div>  
+
+        </form>
+    </div>
+    </section>
+    <!--Contact Section End-->
+
+    <!--Copyright Section-->
+    <div class="copyright">
+        &copy; Norsyuhaddah 2020
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
